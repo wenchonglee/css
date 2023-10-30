@@ -1,0 +1,7 @@
+.base {
+  color: var(--mantine-color-grape-3);
+}
+
+.hidden {
+  visibility: hidden;
+}

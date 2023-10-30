@@ -1,0 +1,11 @@
+.root {
+  padding: var(--mantine-spacing-md);
+}
+
+.root:first-child {
+  color: var(--mantine-color-red-6);
+}
+
+.root .test {
+  color: var(--mantine-color-cyan-6);
+}
