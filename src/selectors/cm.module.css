@@ -9,3 +9,7 @@
 .root .test {
   color: var(--mantine-color-cyan-6);
 }
+
+.root :global(.third-party-classname) {
+  color: var(--mantine-color-violet-6);
+}

@@ -3,7 +3,7 @@
  * ! Remember to clone this to ve.css.md
  * !
  */
-import { style } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
 import { theme } from "../theme";
 
 const root = style({
@@ -23,6 +23,10 @@ const child = style({
       color: theme.colors.cyan[6],
     },
   },
+});
+
+globalStyle(`${root} > .third-party-classname`, {
+  color: theme.colors.violet[6],
 });
 
 export default {

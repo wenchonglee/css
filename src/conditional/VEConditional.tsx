@@ -11,7 +11,7 @@ export const VEConditional = () => {
         Toggle visibility
       </Button>
 
-      <div className={styles.recipeVariants({ isVisible })}>recipes</div>
+      <div className={styles.recipeVariants({ isVisible })}>recipes (recommended approach)</div>
 
       <div className={styles.dataAttributes} data-visibility={isVisible}>
         data-attributes

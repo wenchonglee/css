@@ -1,5 +1,5 @@
 import { CodeHighlightTabs } from "@mantine/code-highlight";
-import { Card, Stack, Title } from "@mantine/core";
+import { Anchor, Card, Code, Stack, Text, Title } from "@mantine/core";
 import { CMSelector } from "./CMSelector";
 import cmtsx from "./CMSelector.tsx?raw";
 import { VESelector } from "./VESelector";
@@ -14,6 +14,19 @@ export const Selectors = () => (
     </Title>
 
     <Title order={2}>Vanilla Extract</Title>
+    <Text>
+      Coming from <Code>css-in-js</Code>, a big change in Vanilla Extract is{" "}
+      <Anchor href="https://vanilla-extract.style/documentation/styling/#complex-selectors">
+        its principle to disallow selectors that target another element.
+      </Anchor>{" "}
+      For example, a simple
+      <Code>& .test</Code>
+      is not technically allowed in Vanilla Extract.
+      <br />
+      <br />
+      While the principle is sound, you will need to use their <Code>globalStyles</Code> escape hatch if you have a need
+      to do this. A use case for this is if you need to target another library's static class
+    </Text>
     <Card p={0} withBorder>
       <VESelector />
       <CodeHighlightTabs
@@ -33,6 +46,9 @@ export const Selectors = () => (
     </Card>
 
     <Title order={2}>CSS Modules</Title>
+    <Text>
+      Similar to above, you must use <Code>:global</Code> for targeting a static class
+    </Text>
     <Card p={0} withBorder>
       <CMSelector />
       <CodeHighlightTabs

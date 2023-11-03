@@ -1,27 +1,26 @@
 import { CodeHighlightTabs } from "@mantine/code-highlight";
 import { Card, Code, Stack, Text, Title } from "@mantine/core";
-import { CMDynamic } from "./CMDynamic";
-import cmtsx from "./CMDynamic.tsx?raw";
-import { VEDynamic } from "./VEDynamic";
-import vetsx from "./VEDynamic.tsx?raw";
+import { CMMantine } from "./CMMantine";
+import cmtsx from "./CMMantine.tsx?raw";
+import { VEMantine } from "./VEMantine";
+import vetsx from "./VEMantine.tsx?raw";
 import cmcss from "./cm.module.css?raw";
 import vecss from "./ve.css.md?raw";
 
-export const Dynamic = () => (
+export const MantineStyles = () => (
   <Stack>
     <Title order={1} ta="center">
-      Dynamic
+      Mantine Styles
     </Title>
 
     <Title order={2}>Vanilla Extract</Title>
     <Text>
-      For styles that have dynamic values, you can use <Code>@vanilla-extract/dynamic</Code> to assign a dynamic CSS
-      variable in scope. This makes use of <Code>style</Code> and if your use case is simple, you might choose to do
-      that instead of using Vanilla Extract altogether.
+      Unless you use <Code>globalStyles</Code> (which is not recommended), you have to pass in individual classes using
+      the <Code>classNames</Code> prop
     </Text>
 
     <Card p={0} withBorder>
-      <VEDynamic />
+      <VEMantine />
       <CodeHighlightTabs
         code={[
           {
@@ -41,12 +40,11 @@ export const Dynamic = () => (
     <Title order={2}>CSS Modules</Title>
 
     <Text>
-      Similar to above, you can either assign a CSS variable using <Code>style</Code> for complex classes, or write your
-      CSS in <Code>style</Code> for simple cases.
+      Similar to above, you have to pass in individual classes using the <Code>classNames</Code> prop
     </Text>
 
     <Card p={0} withBorder>
-      <CMDynamic />
+      <CMMantine />
       <CodeHighlightTabs
         code={[
           {

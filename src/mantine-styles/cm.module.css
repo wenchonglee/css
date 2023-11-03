@@ -1,0 +1,14 @@
+.root {
+  outline: 2px solid var(--mantine-color-orange-6);
+  padding: 4px;
+}
+
+.description {
+  color: var(--mantine-color-lime-6);
+}
+
+/* this will work but you shouldn't do this
+.root :global(.mantine-TextInput-description) {
+  color: var(--mantine-color-lime-6);
+} 
+*/
