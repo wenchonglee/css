@@ -29,7 +29,7 @@ export const MantineStyles = () => (
             language: "ts",
           },
           {
-            fileName: "VEConditional.tsx",
+            fileName: "VEMantine.tsx",
             code: vetsx,
             language: "tsx",
           },
@@ -53,7 +53,7 @@ export const MantineStyles = () => (
             language: "css",
           },
           {
-            fileName: "CMConditional.tsx",
+            fileName: "CMMantine.tsx",
             code: cmtsx,
             language: "tsx",
           },

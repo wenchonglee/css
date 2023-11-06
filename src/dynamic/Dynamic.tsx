@@ -30,7 +30,7 @@ export const Dynamic = () => (
             language: "ts",
           },
           {
-            fileName: "VEConditional.tsx",
+            fileName: "VEDynamic.tsx",
             code: vetsx,
             language: "tsx",
           },
@@ -55,7 +55,7 @@ export const Dynamic = () => (
             language: "css",
           },
           {
-            fileName: "CMConditional.tsx",
+            fileName: "CMDynamic.tsx",
             code: cmtsx,
             language: "tsx",
           },
